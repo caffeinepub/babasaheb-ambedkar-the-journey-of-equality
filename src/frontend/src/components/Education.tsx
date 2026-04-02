@@ -5,44 +5,44 @@ const achievements = [
   {
     key: "columbia-ma",
     year: "1913",
-    title: "Columbia University, New York",
-    desc: "Awarded scholarship from Baroda State to study at Columbia University.",
-    degree: "MA in Economics",
+    title: "कोलंबिया विश्वविद्यालय, न्यूयॉर्क",
+    desc: "बड़ौदा राज्य से कोलंबिया विश्वविद्यालय में अध्ययन हेतु छात्रवृत्ति प्राप्त की।",
+    degree: "अर्थशास्त्र में MA",
   },
   {
     key: "columbia-phd",
     year: "1916",
-    title: "PhD from Columbia",
-    desc: 'Completed PhD with thesis "National Dividend of India". First Indian to receive a doctorate in economics from a foreign university.',
-    degree: "Doctor of Philosophy",
+    title: "कोलंबिया से पीएचडी",
+    desc: "\u201cभारत का राष्ट्रीय लाभांश\u201d शोध प्रबंध से पीएचडी पूरी की। विदेशी विश्वविद्यालय से अर्थशास्त्र में डॉक्टरेट से सम्मानित पहले भारतीय।",
+    degree: "डॉक्टर ऑफ फिलॉसॉफी",
   },
   {
     key: "lse-enroll",
     year: "1916",
-    title: "London School of Economics",
-    desc: "Enrolled at LSE to study for a second doctoral degree.",
-    degree: "DSc Economics",
+    title: "लंदन स्कूल ऑफ इकोनॉमिक्स",
+    desc: "दूसरी डॉक्टरेट डिग्री के लिए LSE में नामांकन किया।",
+    degree: "डीएससी अर्थशास्त्र",
   },
   {
     key: "lse-dsc",
     year: "1920",
-    title: "Returned to London",
-    desc: "Completed MSc in Economics and DSc from LSE.",
-    degree: "MSc & DSc",
+    title: "लंदन वापसी",
+    desc: "LSE से अर्थशास्त्र में MSc और DSc पूरी की।",
+    degree: "MSc और DSc",
   },
   {
     key: "bar",
     year: "1923",
-    title: "Called to the Bar",
-    desc: "Called to the Bar from Gray’s Inn, London — qualifying as a barrister.",
-    degree: "Barrister-at-Law",
+    title: "बार अत लॉ",
+    desc: "लंदन के ग्रेज़ इन से बार अत लॉ में शामिल हुए — अधिवक्ता के रूप में योग्यता प्राप्त की।",
+    degree: "बैरिस्टर-अत-लॉ",
   },
   {
     key: "constitution",
     year: "1947–49",
-    title: "Constitution Drafting Committee",
-    desc: "Appointed Chairman of the Constitution Drafting Committee by the Constituent Assembly of India.",
-    degree: "Legacy Achievement",
+    title: "संविधान मसौदा समिति",
+    desc: "संविधान सभा द्वारा संविधान मसौदा समिति के अध्यक्ष नियुक्त किए गए।",
+    degree: "ऐतिहासिक उपलब्धि",
   },
 ];
 
@@ -69,16 +69,16 @@ export default function Education() {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <p className="text-[oklch(0.72_0.09_75)] uppercase tracking-[0.3em] text-xs font-semibold mb-3">
-            Academic Excellence
+            शैक्षाणिक उत्कृष्टता
           </p>
           <h2 className="font-playfair font-bold text-3xl sm:text-4xl lg:text-5xl text-white uppercase tracking-wide">
-            Education & Achievements
+            शिक्षा और उपलब्धियाँ
           </h2>
           <div className="w-20 h-1 bg-[oklch(0.72_0.09_75)] mx-auto mt-4 rounded-full" />
           <p className="text-white/70 mt-4 max-w-2xl mx-auto text-base">
-            Ambedkar accumulated more university degrees than any other Indian
-            leader of his time, transforming himself from an untouchable boy
-            into one of the world’s greatest legal minds.
+            अंबेडकर ने अपने समय के किसी भी अन्य भारतीय नेता से अधिक विश्वविद्यालय डिग्रियाँ
+            हासिल कीं, खुद को एक अछूत बालक से विश्व के महानतम कानूनी दिमागों में से एक तक
+            पहुँचाया।
           </p>
         </div>
 
@@ -86,7 +86,7 @@ export default function Education() {
           {achievements.map((item, i) => (
             <div
               key={item.key}
-              className="bg-white/10 dark:bg-white/5 backdrop-blur-sm border border-white/20 rounded-xl p-6 hover:bg-white/15 transition-colors group"
+              className={`bg-white/10 dark:bg-white/5 backdrop-blur-sm border border-white/20 rounded-xl p-6 hover:bg-white/15 transition-all duration-300 group animate-stagger-${(i % 6) + 1}`}
               data-ocid={`education.item.${i + 1}`}
             >
               <div className="flex items-center gap-3 mb-3">
@@ -117,17 +117,15 @@ export default function Education() {
         <div className="mt-12 rounded-2xl overflow-hidden max-h-64 relative">
           <img
             src="/assets/generated/ambedkar-student.dim_800x600.jpg"
-            alt="Young Ambedkar during student years abroad"
+            alt="विदेश में छात्र जीवन"
             className="w-full h-64 object-cover object-top"
             loading="lazy"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[oklch(0.285_0.065_234)] via-transparent to-transparent" />
           <div className="absolute bottom-4 left-6 text-white">
-            <p className="font-playfair font-bold text-lg">
-              Student Years Abroad
-            </p>
+            <p className="font-playfair font-bold text-lg">विदेश में छात्र जीवन</p>
             <p className="text-white/70 text-sm">
-              Columbia University, New York · 1913–1916
+              कोलंबिया विश्वविद्यालय, न्यूयॉर्क · 1913–1916
             </p>
           </div>
         </div>

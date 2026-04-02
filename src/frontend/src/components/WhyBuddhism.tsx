@@ -3,23 +3,23 @@ import { useEffect, useRef } from "react";
 const reasons = [
   {
     num: "01",
-    title: "Rejection of Caste",
-    desc: "Hinduism's caste system justified untouchability as divine order. Buddhism offered a complete rejection of caste — every human being is equal regardless of birth.",
+    title: "जाति व्यवस्था का खंडन",
+    desc: "हिंदू धर्म की जाति व्यवस्था ने अस्पृश्यता को ईश्वरीय व्यवस्था बताया। बौद्ध धर्म ने जाति का पूर्ण खंडन किया — हर मानव जन्म से नहीं, कर्म से महान होता है।",
   },
   {
     num: "02",
-    title: "Equality & Dignity",
-    desc: "Buddhism's sangha (community) was open to all — men and women, high and low. It was the only ancient Indian philosophy that truly practiced what it preached about equality.",
+    title: "समानता और सम्मान",
+    desc: "बौद्ध धर्म का संघ सभी के लिए खुला था — स्त्री-पुरुष, उच्च-नीच। यह एकमात्र प्राचीन भारतीय दर्शन था जिसने समानता का सवाल वास्तव में प्रतिपादित किया।",
   },
   {
     num: "03",
-    title: "Rational Philosophy",
-    desc: "Buddhism is grounded in reason, observation, and ethical conduct — not blind faith or revelation. Ambedkar valued its rational, empirical approach to understanding life.",
+    title: "तर्कसंगत दर्शन",
+    desc: "बौद्ध धर्म तर्क, अवलोकन और नैतिक आचरण पर आधारित है, न कि अंधविश्वास पर। अंबेडकर ने जीवन की समझ के लिए इसके तर्कसंगत, अनुभववादी दृष्टिकोण को महत्व दिया।",
   },
   {
     num: "04",
-    title: "Peace & Compassion",
-    desc: "The core Buddhist values of ahimsa (non-violence), karuna (compassion), and metta (loving-kindness) aligned with Ambedkar's vision for a humane society.",
+    title: "शांति और करुणा",
+    desc: "बौद्ध धर्म के मूल मूल्य — अहिंसा, करुणा और मैत्री — अंबेडकर की एक मानवीय समाज की परिकल्पना के साथ मेल खाते थे।",
   },
 ];
 
@@ -41,10 +41,10 @@ export default function WhyBuddhism() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <p className="text-[oklch(0.72_0.09_75)] uppercase tracking-[0.3em] text-xs font-semibold mb-3">
-            The Spiritual Journey
+            आध्यात्मिक यात्रा
           </p>
           <h2 className="font-playfair font-bold text-3xl sm:text-4xl lg:text-5xl text-navy-deep dark:text-white uppercase tracking-wide">
-            Why He Adopted Buddhism
+            उन्होंने बौद्ध धर्म क्यों अपनाया
           </h2>
           <div className="w-20 h-1 bg-[oklch(0.72_0.09_75)] mx-auto mt-4 rounded-full" />
         </div>
@@ -53,23 +53,21 @@ export default function WhyBuddhism() {
           <div>
             <div className="bg-[oklch(0.285_0.065_234)] rounded-2xl p-8 text-white mb-6">
               <p className="font-playfair italic text-lg leading-relaxed mb-4">
-                "I was born a Hindu, but I solemnly assure you that I will not
-                die as a Hindu."
+                &ldquo;मैं एक हिंदू के रूप में पैदा हुआ था, लेकिन मैं गंभीरतापूर्वक आपको आश्वस्त
+                करता हूँ कि मैं हिंदू के रूप में नहीं मरूँगा।&rdquo;
               </p>
               <p className="text-white/60 text-sm">
-                — Dr. B. R. Ambedkar, 1935
+                &mdash; डॉ. बी. आर. अंबेडकर, 1935
               </p>
             </div>
             <p className="text-[oklch(0.44_0.025_240)] dark:text-[oklch(0.75_0.02_235)] leading-relaxed text-base mb-4">
-              For over two decades after making this declaration, Ambedkar
-              studied various religions — Islam, Christianity, Sikhism, and
-              Buddhism — searching for one that truly embodied equality and
-              dignity for all human beings.
+              इस घोषणा के दो दशकों से अधिक समय तक, अंबेडकर ने विभिन्न धर्मों — इस्लाम,
+              ईसाई, सिख और बौद्ध — का अध्ययन किया, उसे ढूँढते हुए जो सभी मनुष्यों के लिए
+              सद्भाव और सम्मान को सत्तामें रखता हो।
             </p>
             <p className="text-[oklch(0.44_0.025_240)] dark:text-[oklch(0.75_0.02_235)] leading-relaxed text-base">
-              He concluded that Buddhism — the ancient Indian philosophy of the
-              Enlightened One — was the answer. It was born in India, rooted in
-              the soil, yet free from the poison of caste.
+              उन्होंने निष्कर्ष निकाला कि बौद्ध धर्म — जो भारत की पवित्र भूमि में प्रकट हुआ,
+              फिर भी जाति के विष से मुक्त था — उत्तर है।
             </p>
           </div>
 
@@ -77,7 +75,7 @@ export default function WhyBuddhism() {
             {reasons.map((item) => (
               <div
                 key={item.num}
-                className="p-5 bg-white dark:bg-[oklch(0.15_0.025_240)] rounded-xl border border-border shadow-xs"
+                className="p-5 bg-white dark:bg-[oklch(0.15_0.025_240)] rounded-xl border border-border shadow-xs hover:-translate-y-1 transition-transform duration-300"
               >
                 <div className="font-playfair font-bold text-3xl text-[oklch(0.72_0.09_75/0.3)] dark:text-[oklch(0.72_0.09_75/0.4)] mb-2">
                   {item.num}

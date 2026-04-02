@@ -5,32 +5,32 @@ const images = [
   {
     key: "portrait",
     src: "/assets/generated/ambedkar-hero.dim_1200x800.jpg",
-    caption: "Dr. Ambedkar — Portrait",
-    desc: "The iconic portrait of Babasaheb Ambedkar — architect, reformer, liberator.",
+    caption: "डॉ. अंबेडकर — चित्र",
+    desc: "बाबासाहेब अंबेडकर का आदर्श चित्र — शिल्पकार, सुधारक, मुक्तिदाता।",
   },
   {
     key: "constitution",
     src: "/assets/generated/ambedkar-constitution.dim_800x600.jpg",
-    caption: "Drafting the Constitution",
-    desc: "Dr. Ambedkar at work drafting India’s foundational document, 1947–1949.",
+    caption: "संविधान लेखन",
+    desc: "डॉ. अंबेडकर भारत के आधारभूत दस्तावेज का मसौदा तैयार करते हुए, 1947–1949।",
   },
   {
     key: "student",
     src: "/assets/generated/ambedkar-student.dim_800x600.jpg",
-    caption: "Student Years Abroad",
-    desc: "The young scholar during his transformative years at Columbia University.",
+    caption: "विदेश में छात्र जीवन",
+    desc: "कोलंबिया विश्वविद्यालय में परिवर्तनकारी वर्षों के दौरान युवा विद्वान।",
   },
   {
     key: "nagpur",
     src: "/assets/generated/ambedkar-nagpur-conversion.dim_800x600.jpg",
-    caption: "Nagpur Conversion 1956",
-    desc: "The historic Dhammachakra Pravartan Din — the largest mass religious conversion.",
+    caption: "नागपुर दीक्षा 1956",
+    desc: "ऐतिहासिक धम्मचक्र प्रवर्तन दिन — मानव इतिहास का सबसे बड़ा सामूहिक धर्म परिवर्तन।",
   },
   {
     key: "speech",
     src: "/assets/generated/ambedkar-speech.dim_800x600.jpg",
-    caption: "A Voice for the Voiceless",
-    desc: "Dr. Ambedkar addressing the masses — a powerful speaker and tireless advocate.",
+    caption: "वंचितों की आवाज़",
+    desc: "डॉ. अंबेडकर जनसमूह को संबोधित करते हुए — एक शक्तिशाली वक्ता और अथक वकील।",
   },
 ];
 
@@ -61,10 +61,10 @@ export default function Gallery() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14">
           <p className="text-[oklch(0.72_0.09_75)] uppercase tracking-[0.3em] text-xs font-semibold mb-3">
-            Historical Moments
+            ऐतिहासिक पल
           </p>
           <h2 className="font-playfair font-bold text-3xl sm:text-4xl lg:text-5xl text-navy-deep dark:text-white uppercase tracking-wide">
-            Gallery
+            गैलरी
           </h2>
           <div className="w-20 h-1 bg-[oklch(0.72_0.09_75)] mx-auto mt-4 rounded-full" />
         </div>
@@ -100,7 +100,7 @@ export default function Gallery() {
         <dialog
           open
           className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4 w-full h-full max-w-full max-h-full m-0 border-0"
-          aria-label="Image lightbox"
+          aria-label="इमेज लाइटबॉक्स"
           data-ocid="gallery.modal"
           onKeyDown={(e) => {
             if (e.key === "Escape") setLightbox(null);
@@ -111,7 +111,7 @@ export default function Gallery() {
             onClick={() => setLightbox(null)}
             data-ocid="gallery.close_button"
             className="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center"
-            aria-label="Close"
+            aria-label="बंद करें"
           >
             <X className="w-5 h-5" />
           </button>
@@ -119,7 +119,7 @@ export default function Gallery() {
             type="button"
             className="absolute inset-0 w-full h-full cursor-default"
             onClick={() => setLightbox(null)}
-            aria-label="Close lightbox"
+            aria-label="लाइटबॉक्स बंद करें"
           />
           <div className="relative max-w-3xl w-full z-10">
             <img

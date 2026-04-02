@@ -29,10 +29,10 @@ export default function ConversionToBuddhism() {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <p className="text-[oklch(0.72_0.09_75)] uppercase tracking-[0.3em] text-xs font-semibold mb-3">
-            14 October 1956 · Nagpur
+            14 अक्टूबर 1956 · नागपुर
           </p>
           <h2 className="font-playfair font-bold text-3xl sm:text-4xl lg:text-5xl text-navy-deep dark:text-white uppercase tracking-wide">
-            Conversion to Buddhism
+            बौद्ध धर्म में दीक्षा
           </h2>
           <div className="w-20 h-1 bg-[oklch(0.72_0.09_75)] mx-auto mt-4 rounded-full" />
         </div>
@@ -41,58 +41,55 @@ export default function ConversionToBuddhism() {
           <div>
             <img
               src="/assets/generated/ambedkar-nagpur-conversion.dim_800x600.jpg"
-              alt="Nagpur Conversion Ceremony 1956"
+              alt="नागपुर दीक्षा समारोह 1956"
               className="rounded-2xl w-full object-cover h-64 sm:h-80 shadow-navy"
               loading="lazy"
             />
             <p className="text-center text-xs text-muted-foreground mt-3 tracking-wide uppercase">
-              Dhammachakra Pravartan Din · Nagpur · 14 October 1956
+              धम्मचक्र प्रवर्तन दिन · नागपुर · 14 अक्टूबर 1956
             </p>
           </div>
 
           <div className="space-y-6">
-            <div className="p-6 bg-white dark:bg-[oklch(0.17_0.03_238)] rounded-xl border border-border shadow-xs">
+            <div className="p-6 bg-white dark:bg-[oklch(0.17_0.03_238)] rounded-xl border border-border shadow-xs hover:-translate-y-1 transition-transform duration-300">
               <div className="flex items-center gap-3 mb-3">
                 <Star className="w-5 h-5 text-[oklch(0.72_0.09_75)]" />
                 <h3 className="font-playfair font-bold text-navy-deep dark:text-white">
-                  The Historic Event
+                  ऐतिहासिक घटना
                 </h3>
               </div>
               <p className="text-[oklch(0.52_0.025_240)] dark:text-[oklch(0.65_0.03_235)] text-sm leading-relaxed">
-                On 14 October 1956, at the Diksha Bhumi in Nagpur, Dr. Ambedkar
-                received diksha (initiation) from Bhadant U Chandramani, the
-                oldest Buddhist monk in India. This was the culmination of over
-                two decades of spiritual searching.
+                14 अक्टूबर 1956 को, नागपुर की दीक्षाभूमि में, डॉ. अंबेडकर ने भारत के सबसे
+                वृद्ध बौद्ध भिक्षु भदंत उ चंद्रमणि से दीक्षा ली। यह दो दशकों से अधिक की
+                आध्यात्मिक खोज का परिणाम था।
               </p>
             </div>
 
-            <div className="p-6 bg-white dark:bg-[oklch(0.17_0.03_238)] rounded-xl border border-border shadow-xs">
+            <div className="p-6 bg-white dark:bg-[oklch(0.17_0.03_238)] rounded-xl border border-border shadow-xs hover:-translate-y-1 transition-transform duration-300">
               <div className="flex items-center gap-3 mb-3">
                 <Users className="w-5 h-5 text-[oklch(0.46_0.11_235)]" />
                 <h3 className="font-playfair font-bold text-navy-deep dark:text-white">
-                  Mass Conversion
+                  सामूहिक दीक्षा
                 </h3>
               </div>
               <p className="text-[oklch(0.52_0.025_240)] dark:text-[oklch(0.65_0.03_235)] text-sm leading-relaxed">
-                After receiving diksha himself, Ambedkar administered it to
-                approximately 600,000 of his followers on the same day — making
-                it the largest mass religious conversion in recorded human
-                history. He gave them 22 vows to guide their new Buddhist lives.
+                डीक्षा ग्रहण के बाद, अंबेडकर ने उसी दिन लगभग 6 लाख अनुयायियों को दीक्षा
+                दी — यह मानव इतिहास में सबसे बड़ा सामूहिक धर्म परिवर्तन बना। उन्होंने उन्हें
+                नए बौद्ध जीवन के लिए 22 प्रतिज्ञाएँ दीं।
               </p>
             </div>
 
-            <div className="p-6 bg-white dark:bg-[oklch(0.17_0.03_238)] rounded-xl border border-border shadow-xs">
+            <div className="p-6 bg-white dark:bg-[oklch(0.17_0.03_238)] rounded-xl border border-border shadow-xs hover:-translate-y-1 transition-transform duration-300">
               <div className="flex items-center gap-3 mb-3">
                 <Book className="w-5 h-5 text-[oklch(0.55_0.12_160)]" />
                 <h3 className="font-playfair font-bold text-navy-deep dark:text-white">
-                  Final Legacy
+                  अंतिम विरासत
                 </h3>
               </div>
               <p className="text-[oklch(0.52_0.025_240)] dark:text-[oklch(0.65_0.03_235)] text-sm leading-relaxed">
-                His final book, <em>"The Buddha and His Dhamma"</em>, was
-                completed just days before his passing. On 6 December 1956 —
-                only 47 days after embracing Buddhism — Babasaheb Ambedkar
-                passed away, leaving behind a transformed nation.
+                उनकी अंतिम पुस्तक <em>"बुद्ध और उनका धम्म"</em> उनके निधन से मात्र कुछ दिन
+                पहले पूरी हुई थी। 6 दिसंबर 1956 को — बौद्ध धर्म अपनाने के केवल 47 दिन बाद
+                — बाबासाहेब अंबेडकर का निधन हो गया।
               </p>
             </div>
           </div>

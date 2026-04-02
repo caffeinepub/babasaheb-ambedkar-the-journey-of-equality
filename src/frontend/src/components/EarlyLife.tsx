@@ -5,20 +5,20 @@ const struggles = [
   {
     key: "discrimination",
     icon: <AlertCircle className="w-5 h-5" />,
-    title: "Caste Discrimination",
-    desc: "Born into the Mahar caste, considered 'untouchable' in the rigid Hindu caste hierarchy. Forced to sit separately in class and denied the right to drink water from a common tap.",
+    title: "जाति भेदभाव",
+    desc: "महार जाति में जन्मे, जिसे हिंदू जाति व्यवस्था में 'अछूत' माना जाता था। उन्हें कक्षा में अलग बैठना पड़ता था और सार्वजनिक नल से पानी पीने का अधिकार नहीं था।",
   },
   {
     key: "family",
     icon: <Heart className="w-5 h-5" />,
-    title: "Family & Roots",
-    desc: "Son of Ramji Maloji Sakpal, an army officer. Despite his father’s military service and modest income, the family faced relentless social ostracism based solely on their caste identity.",
+    title: "परिवार और जड़ें",
+    desc: "रामजी मालोजी सकपाल, एक सेना अधिकारी, के पुत्र। उनके पिता की सैन्य सेवा और मामूली आय के बावजूद, परिवार को केवल जाति के आधार पर निरंतर सामाजिक बहिष्कार का सामना करना पड़ा।",
   },
   {
     key: "education",
     icon: <BookOpen className="w-5 h-5" />,
-    title: "Education Against All Odds",
-    desc: "Teachers refused to touch his books. Yet he excelled in studies, eventually moving to Satara and Mumbai. His brilliance earned him a scholarship to study in America, changing his destiny.",
+    title: "विपरीत परिस्थितियों में शिक्षा",
+    desc: "शिक्षक उनकी किताबें छूने से मना करते थे। फिर भी उन्होंने पढ़ाई में उत्कृष्टता हासिल की। उनकी प्रतिभा ने उन्हें अमेरिका में अध्ययन के लिए छात्रवृत्ति दिलाई, जिसने उनकी नियति बदल दी।",
   },
 ];
 
@@ -40,10 +40,10 @@ export default function EarlyLife() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <p className="text-[oklch(0.72_0.09_75)] uppercase tracking-[0.3em] text-xs font-semibold mb-3">
-            Resilience & Determination
+            दृढ़ता और संकल्प
           </p>
           <h2 className="font-playfair font-bold text-3xl sm:text-4xl lg:text-5xl text-navy-deep dark:text-white uppercase tracking-wide">
-            Early Life & Struggles
+            प्रारंभिक जीवन और संघर्ष
           </h2>
           <div className="w-20 h-1 bg-[oklch(0.72_0.09_75)] mx-auto mt-4 rounded-full" />
         </div>
@@ -51,30 +51,27 @@ export default function EarlyLife() {
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           <div>
             <p className="text-[oklch(0.44_0.025_240)] dark:text-[oklch(0.75_0.02_235)] leading-relaxed text-base mb-6">
-              Bhimrao Ambedkar was born on 14 April 1891 in the town of Mhow,
-              now in Madhya Pradesh. He was the 14th and last child of his
-              parents. From the very first years of his life, he experienced the
-              brutal reality of untouchability.
+              भीमराव अंबेडकर का जन्म 14 अप्रैल 1891 को महू, अब मध्य प्रदेश, में हुआ था। वे
+              अपने माता-पिता की 14वीं और अंतिम संतान थे। जीवन के पहले वर्षों से ही उन्होंने
+              अस्पृश्यता की क्रूर वास्तविकता का अनुभव किया।
             </p>
             <p className="text-[oklch(0.44_0.025_240)] dark:text-[oklch(0.75_0.02_235)] leading-relaxed text-base mb-6">
-              In school, he was made to sit on the floor outside the classroom.
-              The school peon would pour water into his hands from a height —
-              the boy was not allowed to touch the water tap. Despite these
-              humiliations, Ambedkar’s will to learn was unbreakable.
+              स्कूल में उन्हें कक्षा के बाहर फर्श पर बैठाया जाता था। चपरासी ऊंचाई से उनके हाथों
+              पर पानी डालता था — लड़के को नल छूने की अनुमति नहीं थी। इन अपमानों के
+              बावजूद, अंबेडकर की सीखने की इच्छाशक्ति अटूट रही।
             </p>
             <p className="text-[oklch(0.44_0.025_240)] dark:text-[oklch(0.75_0.02_235)] leading-relaxed text-base">
-              With the support of the Maharaja of Baroda, he received a
-              scholarship to pursue higher education abroad. This opened the
-              doors to Columbia University, New York — and changed the course of
-              Indian history.
+              बड़ौदा के महाराजा के समर्थन से उन्हें विदेश में उच्च शिक्षा के लिए छात्रवृत्ति
+              मिली। इससे न्यूयॉर्क के कोलंबिया विश्वविद्यालय के द्वार खुले — और भारतीय
+              इतिहास की दिशा बदल गई।
             </p>
           </div>
 
           <div className="space-y-6">
-            {struggles.map((item) => (
+            {struggles.map((item, i) => (
               <div
                 key={item.key}
-                className="flex gap-4 p-5 rounded-xl bg-white dark:bg-[oklch(0.17_0.03_238)] border border-border shadow-xs hover:shadow-navy transition-shadow"
+                className={`flex gap-4 p-5 rounded-xl bg-white dark:bg-[oklch(0.17_0.03_238)] border border-border shadow-xs hover:shadow-navy transition-all duration-300 animate-stagger-${i + 1}`}
               >
                 <div className="w-10 h-10 rounded-lg bg-[oklch(0.285_0.065_234)] text-white flex items-center justify-center flex-shrink-0">
                   {item.icon}
